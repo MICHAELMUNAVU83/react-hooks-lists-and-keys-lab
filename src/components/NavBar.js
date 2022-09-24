@@ -1,28 +1,13 @@
 import React from "react";
 
 function NavBar() {
- 
-  const links = [
-    {
-      link :"#home",
-      id: 1
-    },
-    {
-      link :"#about",
-      id: 2
-    },
-    {
-      link :"#projects",
-      id: 3
-    },
-    
-  ]
+  const links = ["#home", "#about", "#projects"];
 
   return (
     <nav>
       {links.map((link) => (
-        <a key={link.id} href={link.link}>
-          {link.link}
+        <a key={link} href={link}>
+          {link}
         </a>
       ))}
     </nav>
